@@ -121,10 +121,12 @@ function getArgsAndOperation() {
   var numberY = prompt('Введите число "Y".');
   var operation = prompt('Введите название математической операции.');
 
-  alert(mathOperation(numberX, numberY, operation));
+  var value = doMathOperation(numberX, numberY, operation);
+
+  alert(value);
 }
 
-function mathOperation(numberX, numberY, operation) {
+function doMathOperation(numberX, numberY, operation) {
 
   var value;
 
