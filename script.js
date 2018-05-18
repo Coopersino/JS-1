@@ -43,34 +43,32 @@ function adminName() {
 
 function getMathOperation() {
 
-  // var numberX = prompt('Введите число "X".');
-  // var numberY = prompt('Введите число "Y".');
-  // var value;
+  var numberX = prompt('Введите число "X".');
+  var numberY = prompt('Введите число "Y".');
+  var value;
 
-  // if (isNaN(+numberX) || isNaN(+numberY)) {
-  //   value = "Что-то пошло не так...";
-  // }
-  // else {
-  //   numberX *= 1;
-  //   numberY *= 1;
+  if (isNaN(+numberX) || isNaN(+numberY)) {
+    value = "Что-то пошло не так...";
+  }
+  else {
+    numberX *= 1;
+    numberY *= 1;
 
-  //   if (numberX >= 0 && numberY >= 0) {
-  //     value = numberX - numberY;
-  //     value = "разность чисел: " + value;
-  //   }
-  //   else if (numberX < 0 && numberY < 0) {
-  //     value = numberX * numberY;
-  //     value = "произведение чисел: " + value;
-  //   }
-  //   else {
-  //     value = numberX + numberY;
-  //     value = "сумма чисел: " + value;
-  //   }
-  // }
-  var a = 2;
-var x = 1 + (a *= 2);
+    if (numberX >= 0 && numberY >= 0) {
+      value = numberX - numberY;
+      value = "разность чисел: " + value;
+    }
+    else if (numberX < 0 && numberY < 0) {
+      value = numberX * numberY;
+      value = "произведение чисел: " + value;
+    }
+    else {
+      value = numberX + numberY;
+      value = "сумма чисел: " + value;
+    }
+  }
 
-  alert(x);
+  alert(value);
 }
 
 function getValue() {
