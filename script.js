@@ -178,22 +178,27 @@ function getPow(number, pow) {
 }
 
 function getSimpleNumbers() {
-  var i = 0;
-  var j = 0;
-  var simpleNumbersArr = [];
+  var simpleNumbersArr = [2];
+  var number = 2;
 
-  while (i <= 100) {
-    while (j <= i) {
-      if (i % j == 0) {
-        j++;
+  while (number <= 100) {
+    var isSimple = true;
+    var i = 0;
+
+    while (i < simpleNumbersArr.length) {
+      if (number % simpleNumbersArr[i] == 0) {
+        isSimple = false;
       }
-      else {
-        simpleNumbersArr.push(i);
-        j++;
-      }
+      i++;
     }
-    i++;
+
+    if (isSimple == true) {
+      simpleNumbersArr.push(number);
+    }
+    
+    number++;
   }
+
   alert(simpleNumbersArr);
 }
 
