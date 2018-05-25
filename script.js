@@ -28,6 +28,9 @@ btnForNoBody.addEventListener('click', getNumericalSeriesFrom1To9);
 var btnPyramid = document.getElementById('pyramid');
 btnPyramid.addEventListener('click', getPyramid);
 
+var btnNumberToObject = document.getElementById('numberToObject');
+btnNumberToObject.addEventListener('click', numberToObject);
+
 function сelsiusToFahrenheit() {
   var tCelsius = prompt('Введите температуру в градусах цельсия.');
 
@@ -234,4 +237,21 @@ function getPyramid() {
     pin += "x";
     console.log(pin);
   }
+}
+
+function numberToObject() {
+
+  var number = prompt("Введите трехзначное число, от 0 до 999");
+  var numberObject = {};
+  
+  if (number.length > 3 || number.length < 1){
+    console.log("Введено не корректное число!");
+  }
+  else {
+    numberObject.units = number[2];
+    numberObject.decades = number[1];
+    numberObject.hundreds = number[0];
+  }
+
+  console.log(numberObject);
 }
