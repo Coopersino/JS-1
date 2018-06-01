@@ -8,12 +8,45 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div id="wrapper">
     <ul class="functionList">
-      <li id="сelsiusToFahrenheit" class="finction__item">Перевести температуру из градусов цельсия в градусы фарингейта</li>
-      <li id="adminName" class="finction__item">Узнать кто здесь админ</li>
+      <li>
+        <h3>Homework_6</h3>
+      </li>
     </ul>
   </div>
+  <div class="gallery">
+    <div class="gallery__item">
+      <div class="card">
+        <span id="goodsNames"></span>
+        <span id="goodsQuantity"></span>
+        <span id="goodsCost"></span>
+      </div>
+      <div class="gallery-block">
+        <a class="btn" id="left">prev</a>
+        <div class="img-wrapper">
+          <img id="big_img" src="img_big/01_L.png">
+        </div>
+        <a class="btn" id="right">next</a>
+      </div>
+    </div>
+    <div class="gallery__item--small" data-img-number="01">
+      <span data-name="Сквиртл">Сквиртл</span>
+      <span data-price="550">цена:550p.</span>
+      <span class="inCard">в корзину</span>
+    </div>
+    <div class="gallery__item--small" data-img-number="02">
+      <span data-name="Бульбазавр">Бульбазавр</span>
+      <span data-price="400">цена:400p.</span>
+      <span class="inCard">в корзину</span>
+    </div>
+    <div class="gallery__item--small" data-img-number="03">
+      <span data-name="Чермондер">Чермондер</span>
+      <span data-price="350">цена:350p.</span>
+      <span class="inCard">в корзину</span>
+    </div>
+  </div>
+  <!-- <div id="chessBoard"></div> -->
   <script src="script.js"></script>
 </body>
 
